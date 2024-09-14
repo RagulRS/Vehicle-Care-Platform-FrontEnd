@@ -1,0 +1,28 @@
+{
+    "generalService": {
+      "description": [
+        "Oil and filter changes",
+        "Fluid level top-ups",
+        "Visual inspection of brakes",
+        "Visual inspection of tires",
+        "Visual inspection of lights",
+        "Inspection of other key components"
+      ],
+      "price": 150,
+      "imageUrl": "https://img.freepik.com/free-vector/car-tuning-abstract-concept-illustration_335657-1844.jpg?t=st=1726348282~exp=1726351882~hmac=41f2cbcfb86343a09b301a3f84abc9a494b896407847975df68d2432ef6c834c&w=740"
+    },
+    "fullCarService": {
+      "description": [
+        "Air filter change",
+        "Fuel filter (diesel) / Spark plugs change (petrol)",
+        "Extensive brake inspection",
+        "Wheel bearings and shock absorbers inspection",
+        "Electrical components (e.g. battery, alternator and starter motor) tested",
+        "Air conditioning system inspection",
+        "Radiator and coolant hose checked"
+      ],
+      "price": 300,
+      "imageUrl": "https://img.freepik.com/free-vector/car-service-isometric-compositions-with-workshop-staff-performing-diagnostics-maintenance-wheel-balancing-isolated-vector-illustration_1284-79697.jpg?w=740&t=st=1726348000~exp=1726348600~hmac=1240c5aed11b0bad4833d6d5a89c9006df9c96007b855dd43ac9fe55ca4510ed"
+    }
+  }
+  

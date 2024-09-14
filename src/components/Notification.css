@@ -1,0 +1,27 @@
+.notification {
+    position: absolute; /* Set it absolute so it can be positioned relative to the nearest relative parent */
+    top: 80px; /* Adjust this value according to your Header height */
+    right: 20px; /* Distance from the right edge */
+    width: 250px; /* Set the width to be small */
+    background-color: #ff9800; /* Bright orange color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size */
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  

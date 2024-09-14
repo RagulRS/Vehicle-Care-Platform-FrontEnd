@@ -1,0 +1,71 @@
+/* Header.css */
+header {
+  background: #343a40; /* Dark background for header */
+  color: #fff; /* White text color */
+  padding: 0.5rem 1rem;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8f9fa; /* Light color for brand name */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /%3E%3C/svg%3E') center center no-repeat;
+}
+
+.nav-link {
+  color: #f8f9fa !important; /* Light color for nav links */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  background-color: #495057; /* Darker background on hover */
+  border-radius: 5px;
+}
+
+.btn-light {
+  color: #343a40; /* Dark text color for buttons */
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+  color: #343a40;
+}
+
+.bi-cart {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 992px) {
+  .navbar-expand-lg {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,45 @@
+
+.slider-container {
+    width: 100%; 
+    margin: 0 auto; 
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-image {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    .slider-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .slide {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .slider-image {
+      width: 100%;
+      height: 400px; 
+      object-fit: contain; 
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .slider-container {
+      width: 100%;
+    }
+  
+    .slider-image {
+      height: 250px; 
+    }
+  }
+  
+
+  

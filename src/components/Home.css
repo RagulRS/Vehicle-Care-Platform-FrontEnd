@@ -1,0 +1,391 @@
+/* src/pages/Home.css */
+
+/* General Container Styles */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: #fff;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin: 10px 0 30px;
+}
+
+.cta-button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+/* Service Section */
+.service-section {
+  padding: 40px 20px;
+}
+
+.service-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.service-card p {
+  color: #666;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Featured Services Section */
+.featured-services-section {
+  padding: 60px 20px;
+  background: #f1f1f1;
+}
+
+.featured-services {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featured-service {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-service img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.featured-service h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.featured-service p {
+  color: #666;
+}
+
+.featured-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Special Offers Section */
+.special-offers-section {
+  padding: 60px 20px;
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.special-offers {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.special-offer {
+  background: #0056b3;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special-offer h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.special-offer p {
+  font-size: 16px;
+}
+
+.special-offer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* FAQs Section */
+.faq-section {
+  padding: 60px 20px;
+  background: #f1f1f1;
+}
+
+.faq-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-button:hover {
+  background: #ff4d4d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #666;
+}
+
+input, select {
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* src/pages/Home.css */
+
+/* General styling */
+.home-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Hero section styling */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Review section */
+.review-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rating-section,
+.comment-section {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.review-list {
+  margin: 20px 0;
+}
+
+.review-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

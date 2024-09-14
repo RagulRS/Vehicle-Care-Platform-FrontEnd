@@ -1,0 +1,82 @@
+[
+    {
+      "date": "2024-08-01",
+      "service": "Oil Change",
+      "details": "Changed engine oil and filter.",
+      "cost": "$50.00",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    {
+      "date": "2024-06-15",
+      "service": "Tire Rotation",
+      "details": "Rotated tires to ensure even wear.",
+      "cost": "$30.00",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com"
+    },
+    {
+      "date": "2024-03-22",
+      "service": "Brake Pads Replacement",
+      "details": "Replaced front and rear brake pads.",
+      "cost": "$200.00",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "date": "2023-12-10",
+      "service": "Battery Replacement",
+      "details": "Replaced old battery with a new one.",
+      "cost": "$120.00",
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com"
+    },
+    {
+      "date": "2023-10-05",
+      "service": "Transmission Fluid Change",
+      "details": "Changed transmission fluid and filter.",
+      "cost": "$150.00",
+      "name": "Carol Davis",
+      "email": "carol.davis@example.com"
+    },
+    {
+      "date": "2023-07-20",
+      "service": "Air Filter Replacement",
+      "details": "Replaced engine air filter.",
+      "cost": "$25.00",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    {
+      "date": "2023-05-15",
+      "service": "Cooling System Flush",
+      "details": "Flushed and replaced coolant.",
+      "cost": "$80.00",
+      "name": "Eva Martinez",
+      "email": "eva.martinez@example.com"
+    },
+    {
+      "date": "2023-03-30",
+      "service": "Spark Plug Replacement",
+      "details": "Replaced spark plugs.",
+      "cost": "$60.00",
+      "name": "Frank Taylor",
+      "email": "frank.taylor@example.com"
+    },
+    {
+      "date": "2022-12-12",
+      "service": "Alignment Check",
+      "details": "Performed alignment check and adjustment.",
+      "cost": "$70.00",
+      "name": "Grace Anderson",
+      "email": "grace.anderson@example.com"
+    },
+    {
+      "date": "2022-09-08",
+      "service": "Cabin Air Filter Replacement",
+      "details": "Replaced cabin air filter.",
+      "cost": "$40.00",
+      "name": "Hank Thomas",
+      "email": "hank.thomas@example.com"
+    }
+]
