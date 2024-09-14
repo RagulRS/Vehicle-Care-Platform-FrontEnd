@@ -4,7 +4,7 @@ import { addToCart, decreaseCart } from './features/cartSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import Footer from './Footer';
-import './Products.css'; // Import the CSS file
+import './Products.css'; 
 
 const products = [
     {
@@ -118,7 +118,7 @@ const Products = () => {
     dispatch(decreaseCart(product));
   };
 
-  // Filter products based on search and filters
+
   const filteredProducts = products
     .filter(product => 
       (selectedCategory === 'All' || product.category === selectedCategory) &&
@@ -133,7 +133,7 @@ const Products = () => {
       <div className="container mt-5">
         <h1 className="mb-4">Products</h1>
 
-        {/* Search and Filter Section */}
+       
         <div className="mb-4">
           <input
             type="text"

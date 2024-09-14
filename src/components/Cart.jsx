@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { decreaseCart, addToCart } from './features/cartSlice';
 import Header from './Header';
+import config from './config';
 
 const Cart = () => {
   const cart = useSelector(state => state.cart);
@@ -16,7 +17,7 @@ const Cart = () => {
   };
 
   const handlePayment = async () => {
-    const response = await fetch('http://localhost:3001/createOrder', {
+    const response = await fetch(`${config.apiUrl}/createOrder`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

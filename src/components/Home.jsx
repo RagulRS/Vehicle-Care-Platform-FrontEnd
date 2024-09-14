@@ -22,12 +22,8 @@ const Home = () => {
     setPopupOpen(false);
   };
 
-  const navigate = useNavigate();
 
-  const handleSomeAction = () => {
-    showNotification('Action performed successfully!');
-    navigate('/some-other-page');
-  };
+  
 
   const showNotification = (message) => {
     setNotification(message);

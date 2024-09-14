@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import config from './config';
 
 const Login = () => {
     const [email, setEmail] = useState();
@@ -12,7 +13,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post('http://localhost:3001/login', { email, password })
+        axios.post(`${config.apiUrl}/login`, { email, password })
         .then(result => {
             console.log(result.data); 
             if (result.data.token) { 

@@ -3,10 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./PeriodicMaintenance.css"; 
 import Header from "./Header"; 
 import Footer from "./Footer";
+import config from './config';
 import carBrandsData from '../data/carBrands.json';
 import baseServiceChargesData from '../data/baseServiceCharges.json';
 import brandServiceChargesData from '../data/brandServiceCharges.json';
 import serviceData from '../data/generalService.json'; 
+
 
 const PeriodicMaintenance = () => {
   const [selectedBrand, setSelectedBrand] = useState("");
@@ -24,27 +26,26 @@ const PeriodicMaintenance = () => {
     const serviceInCart = cart.find((item) => item.serviceKey === serviceKey);
     
     if (serviceInCart) {
-      // If the service is already in the cart, remove it
+ 
       setCart(cart.filter((item) => item.serviceKey !== serviceKey));
     } else {
-      // Otherwise, add it to the cart
+    
       setCart([...cart, { serviceKey, price }]);
     }
 
-    // Show "Added" temporarily
     setAddingService(serviceKey);
     setTimeout(() => {
       setAddingService(null);
     }, 2000);
   };
 
-  // Calculate total price
+
   const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
 
   const handlePayment = async () => {
     const totalAmount = cart.reduce((acc, curr) => acc + curr.price, 0);
   
-    const response = await fetch("http://localhost:3001/createOrder", {
+    const response = await fetch(`${config.apiUrl}/createOrder`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -55,12 +56,12 @@ const PeriodicMaintenance = () => {
     const data = await response.json();
   
     const options = {
-      key: "YOUR_RAZORPAY_KEY_ID", // Enter the Key ID generated from Razorpay Dashboard
+      key: "YOUR_RAZORPAY_KEY_ID", // There is a problem in creating in Razor pay account they asked for a website link and i added but still it takes them tym to approve
       amount: data.amount,
       currency: data.currency,
       name: "Your Company Name",
       description: "Test Transaction",
-      order_id: data.id, // This is the order_id from the backend
+      order_id: data.id, 
       handler: function (response) {
         alert(`Payment successful: ${response.razorpay_payment_id}`);
       },
@@ -80,7 +81,7 @@ const PeriodicMaintenance = () => {
 
   return (
     <div>
-      <Header /> {/* Include the Header component */}
+      <Header /> 
       <div className="container mt-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h1 className="display-4">Periodic Maintenance Services</h1>

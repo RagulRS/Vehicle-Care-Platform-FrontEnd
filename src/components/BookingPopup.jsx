@@ -1,13 +1,14 @@
-// src/components/BookingPopup.js
+
 import React, { useState } from 'react';
 import './BookingPopup.css';
+import config from './config'
 
 const BookingPopup = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [service, setService] = useState('');
-  const [date, setDate] = useState(''); // New state for date
+  const [date, setDate] = useState(''); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,11 +18,11 @@ const BookingPopup = ({ isOpen, onClose }) => {
       email,
       phone,
       service,
-      date, // Include date in formData
+      date, 
     };
 
     try {
-      const response = await fetch('http://localhost:3001/book-service', {
+      const response = await fetch(`${config.apiUrl}/book-service`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
