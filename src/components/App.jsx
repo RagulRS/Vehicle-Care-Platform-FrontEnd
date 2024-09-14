@@ -8,14 +8,12 @@ import PeriodicMaintenance from './PeriodicMaintenance.jsx';
 import Products from './Products.jsx';
 import Cart from './Cart.jsx';
 import { Provider } from 'react-redux';
-import { store } from '../store/Store.jsx';
+import { store } from './store.jsx';
 import MaintenanceHistory from './MaintenanceHistory.jsx';
 
 
 
 function App() {
-
- 
 
 
   return (
