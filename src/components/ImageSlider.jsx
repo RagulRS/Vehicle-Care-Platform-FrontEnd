@@ -16,9 +16,9 @@ const ImageSlider = () => {
   };
 
   const images = [
-    'https://img2.wallspic.com/crops/8/8/6/9/4/149688/149688-black_car_in_a_parking_lot-7680x4320.jpg',
-    'https://img2.wallspic.com/crops/0/0/7/6/2/126700/126700-bmw-sports_car-sportscar-auto_part-wheel-7680x4320.jpg',
-    'https://img1.wallspic.com/crops/4/2/5/4/6/164524/164524-ford_gt-2020_chicago_auto_show-ford_motor_company-ford-ford_gt40-7680x4320.jpg',
+    'https://img.freepik.com/free-photo/view-four-wheeled-vehicle-mobility-fast-travel_23-2151016420.jpg?t=st=1726358445~exp=1726362045~hmac=9357c93a99e598c92f4626e6a06b971523a39422b047144a205000b487fd720c&w=1380',
+    'https://img.freepik.com/free-photo/view-four-wheeled-vehicle-mobility-fast-travel_23-2151016422.jpg?uid=R163441292&ga=GA1.1.856834063.1726224830&semt=ais_hybrid',
+    'https://img.freepik.com/free-photo/view-mini-four-wheel-mobility-vehicle_23-2151016398.jpg?t=st=1726358501~exp=1726362101~hmac=6c9ca4f96393d8827740e47068e2c4d9b5b8bdebb2b2ead4e14bb294e88c6cf9&w=1380',
   ];
 
   return (
@@ -26,7 +26,7 @@ const ImageSlider = () => {
       <Slider {...settings}>
         {images.map((imgSrc, index) => (
           <div key={index}>
-            <img src={imgSrc} alt={`Slide ${index + 1}`} style={{ width: '100%', height: 'auto' }} />
+            <img src={imgSrc} alt={`Slide ${index + 1}`} style={{ width: '100%', height: '400px' }} />
           </div>
         ))}
       </Slider>
