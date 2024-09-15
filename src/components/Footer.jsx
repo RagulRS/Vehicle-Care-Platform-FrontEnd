@@ -10,13 +10,13 @@ const Footer = () => {
           <h5>© 2024 RagulRS. All Rights Reserved.</h5>
         </div>
         <div className="footer-icons">
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/ragul-singh-d-6a2b4c5/" target="_blank" rel="noreferrer">
             <i className="bi bi-linkedin"></i>
           </a>
-          <a href="https://github.com/your-profile" target="_blank" rel="noreferrer">
+          <a href="https://github.com/RagulRS" target="_blank" rel="noreferrer">
             <i className="bi bi-github"></i>
           </a>
-          <a href="mailto:your-email@example.com" target="_blank" rel="noreferrer">
+          <a href="mailto:ragulsingh6245@gmail.com" target="_blank" rel="noreferrer">
             <i className="bi bi-envelope-fill"></i>
           </a>
         </div>

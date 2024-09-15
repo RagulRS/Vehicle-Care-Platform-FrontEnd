@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import config from './config'
+import './Register.css'
 
 const Register = () => {
     const [name, setName] = useState();
@@ -44,7 +45,7 @@ const Register = () => {
                             <input 
                                 type="text"
                                 placeholder="Enter Name"
-                                className="form-control" 
+                                className="form-control full-width-input" 
                                 id="exampleInputname" 
                                 onChange={(event) => setName(event.target.value)}
                                 required
