@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import config from './config';
+import "./login.css"
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -33,7 +34,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className="d-flex justify-content-center align-items-center vh-100" style={{ backgroundImage: "linear-gradient(#00d5ff, #0095ff, rgba(93,0,255,.555))" }}>
+            <div id='loginPage' className="d-flex justify-content-center align-items-center vh-100" >
                 <div className="bg-white p-3 rounded shadow-lg" style={{ width: '100%', maxWidth: '500px' }}>
                     <h2 className="mb-3 text-primary text-center">Login</h2>
                     <form onSubmit={handleSubmit}>
