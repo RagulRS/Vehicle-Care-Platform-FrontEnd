@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import config from './config';
-import "./login.css"
+import "./Login.css"
 
 const Login = () => {
     const [email, setEmail] = useState('');
