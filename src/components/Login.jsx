@@ -10,11 +10,10 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post(`${config.apiUrl}/login`, { email, password })
+        axios.post(`${config.apiUrl}/login`, {email, password})
         .then(result => {
             console.log(result.data); 
             if (result.data.token) { 
